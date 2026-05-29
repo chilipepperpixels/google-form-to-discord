@@ -1,7 +1,7 @@
 # Google Form to Sheet to Discord
 
-This project automatically pulls new entries from a Google Form/Sheet and posts them to Discord as an embed. 
-
+This project automatically pulls new entries from a Google Form/Sheet and posts them to Discord as an embed. When you set your form to store the incoming responses into an existing or new spreadsheet, this project will post the values of the newest row as an embed message through a Discord webhook. Important to note, this will not create messages for already existing entries, only those were created AFTER the addition of the script and triggers will be handled. 
+Disclaimer: This project was inspired by https://github.com/Kelo/Google-Sheets-to-Discord.git but i re-imagined it to fit my personal needs. 
 ---
 
 ## Features
@@ -37,7 +37,7 @@ This project automatically pulls new entries from a Google Form/Sheet and posts 
 ### 1. Google Apps Script Setup
 - Open your Google Sheet
 - Go to **Extensions → Apps Script**
-- Paste `Code.gs` into the editor
+- Paste the content of `onFormSubmit.js` into the editor
 
 ### 2. Enable Trigger
 In Apps Script:
@@ -54,3 +54,4 @@ In Apps Script:
 
 ```js
 var webhookUrl = "YOUR_WEBHOOK_URL";
+
