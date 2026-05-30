@@ -1,5 +1,8 @@
 function onFromSubmit(e) {
 
+  const scriptProperties = PropertiesService.getScriptProperties();
+  const myWebhookURL = scriptProperties.getProperty('WEBHOOK_URL');
+
   try {
 
     if (!e || !e.values) {
@@ -42,9 +45,6 @@ function onFromSubmit(e) {
       embeds: [embed]
     });
 
-    var webhookUrl =
-      "WEBOOK_URL_HERE"; // Replace with your actual webhook URL from Discord or Cloudflare worker
-
     var options = {
       method: "post",
       contentType: "application/json",
@@ -55,7 +55,7 @@ function onFromSubmit(e) {
     // Retry system
     for (var attempt = 1; attempt <= 3; attempt++) {
 
-      var response = UrlFetchApp.fetch(webhookUrl, options);
+      var response = UrlFetchApp.fetch(myWebhookURL, options);
 
       var code = response.getResponseCode();
 
