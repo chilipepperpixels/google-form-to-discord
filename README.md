@@ -110,3 +110,5 @@ This improves reliability and avoids Discord blocking Google IP ranges.
    - Variable name = WEBHOOK_URL
    - Value = "Your webhook link goes in here"
    - Deploy
+
+This way your webhook link is stored in a secure variable that only you can see.
