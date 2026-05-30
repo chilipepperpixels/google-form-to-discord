@@ -58,6 +58,8 @@ In Apps Script:
   - Function: `onFormSubmit`
   - Event source: `From spreadsheet`
   - Event type: `On form submit`
+<img width="288" height="474" alt="image" src="https://github.com/user-attachments/assets/cf450ccd-250e-4378-9a54-c76ecb7ca271" />
+
 
 ### 3. Discord Webhook Setup
 - Go to your Discord server settings
@@ -67,7 +69,7 @@ In Apps Script:
    - Script Properties:
       - Property = WEBHOOK_URL
       - Value = "Your webhook link goes in here"
-     <img width="761" height="258" alt="image" src="https://github.com/user-attachments/assets/c67d45f9-564d-4f56-bd18-53aafa4e6e02" />
+<img width="761" height="258" alt="image" src="https://github.com/user-attachments/assets/c67d45f9-564d-4f56-bd18-53aafa4e6e02" />
 
 
 This way your webhook link is stored in a secure variable that only you can see.      
@@ -112,5 +114,6 @@ This improves reliability and avoids Discord blocking Google IP ranges.
    - Variable name = WEBHOOK_URL
    - Value = "Your webhook link goes in here"
    - Deploy
+<img width="398" height="524" alt="image" src="https://github.com/user-attachments/assets/00a4ebb1-62a2-409d-80be-590a26bd8dac" />
 
 This way your webhook link is stored in a secure variable that only you can see.
